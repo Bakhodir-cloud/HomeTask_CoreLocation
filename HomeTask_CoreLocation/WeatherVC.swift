@@ -28,6 +28,7 @@ class WeatherVC: UIViewController {
             DispatchQueue.main.async {
                 self.gradusLbl.text = "\(weather.current.tempC) C"
                 self.cityLbl.text = weather.location.name
+                print(weather.location.name)
             }
         }
     }
